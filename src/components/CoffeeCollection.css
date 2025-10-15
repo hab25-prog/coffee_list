@@ -3,9 +3,9 @@
   background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
   min-height: 75vh;
   width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  margin-top: 150px;
+  max-width: 1000px;
+  margin: 150px auto;
+  /* margin-top: 150px; */
   border-radius: 11px;
 }
 
