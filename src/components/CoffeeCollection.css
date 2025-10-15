@@ -1,12 +1,12 @@
 .coffee-collection {
   padding: 60px 20px;
-
   background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
-  min-height: 100vh;
+  min-height: 75vh;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   margin-top: 150px;
+  border-radius: 11px;
 }
 
 .collection-header {
