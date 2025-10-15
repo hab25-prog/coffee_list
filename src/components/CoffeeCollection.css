@@ -1,0 +1,114 @@
+.coffee-collection {
+  padding: 60px 20px;
+
+  background: linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%);
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.collection-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.collection-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.collection-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #a0a0a0;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  padding: 12px 24px;
+  border: none;
+  background-color: #3a3a3a;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.filter-btn:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.filter-btn:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.filter-btn:hover {
+  background-color: #4a4a4a;
+}
+
+.filter-btn.active {
+  background-color: #6b7280;
+  color: #ffffff;
+}
+
+.coffee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .coffee-collection {
+    padding: 40px 15px;
+  }
+
+  .collection-title {
+    font-size: 2rem;
+  }
+
+  .collection-description {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  .coffee-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .filter-btn {
+    width: 200px;
+    border-radius: 0;
+  }
+
+  .filter-btn:first-child {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .filter-btn:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+}

@@ -1,0 +1,11 @@
+.app {
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+.banner {
+  position: absolute;
+  height: 200px;
+  width: 100%;
+  z-index: -10;
+}
